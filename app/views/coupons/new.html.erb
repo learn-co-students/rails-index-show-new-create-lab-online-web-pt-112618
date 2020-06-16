@@ -1,0 +1,13 @@
+<%= form_for @coupon do |f| %>
+  <%= f.label :coupon_code, "Coupon Form" %>
+  <%= f.text_field :coupon_code %>
+  <%= f.text_field :store %>
+  <%= f.submit "Submit Coupon" %>
+<% end %>
+
+<%# This also works %>
+<%#= form_tag coupons_path %>
+<!-- <label>Coupon Form</label> -->
+<%#= text_field_tag :'coupon[coupon_code]' %>
+<%#= text_field_tag :'coupon[store]' %>
+<%#= submit_tag "Submit Coupon" %>
